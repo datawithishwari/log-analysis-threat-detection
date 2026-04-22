@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📦 requirements.txt
+# requirements.txt
 
 ```
 pandas
@@ -137,7 +137,7 @@ import streamlit as st
 import pandas as pd
 from src.detect import detect_bruteforce, detect_offhours
 
-st.title("🔐 Log Analysis Dashboard")
+st.title(" Log Analysis Dashboard")
 
 # Load data
 df = pd.read_csv("data/logs.csv")
@@ -150,10 +150,10 @@ st.write(df)
 brute = detect_bruteforce(df)
 off = detect_offhours(df)
 
-st.subheader("🚨 Brute Force Alerts")
+st.subheader(" Brute Force Alerts")
 st.write(brute)
 
-st.subheader("🌙 Off-Hours Activity")
+st.subheader(" Off-Hours Activity")
 st.write(off[['timestamp','username','ip']])
 ```
 
@@ -164,7 +164,7 @@ streamlit run app.py
 
 ---
 
-## 🎯 Key Features
+# Key Features
 - Detects brute-force attacks
 - Identifies off-hour anomalies
 - Visualizes suspicious activity
@@ -193,5 +193,5 @@ streamlit run app.py
 
 ---
 
-## 👩‍💻 Author
+# Author
 Ishwari C Badiger
